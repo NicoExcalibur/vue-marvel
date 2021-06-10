@@ -13,7 +13,7 @@
             :alt="'Image de ' + hero.name"
           />
           <h3>
-            <router-link :to="{ name: 'hero', params: { id: hero.name } }">{{
+            <router-link :to="{ name: 'hero', params: { id: hero.id } }">{{
               hero.name
             }}</router-link>
           </h3>
