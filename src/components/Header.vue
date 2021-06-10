@@ -4,7 +4,7 @@
     <div class="nav">
       <ul class="nav-list">
         <li class="nav-item">Home</li>
-        <li class="nav-item">Characters</li>
+        <li class="nav-item"><a href="">Characters</a></li>
         <li class="nav-item">Comics</li>
       </ul>
     </div>
