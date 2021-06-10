@@ -22,6 +22,8 @@ export default {
   background-color: red;
   padding: 2em;
   color: white;
+  position: fixed;
+  top: 0;
 }
 
 .nav-list {

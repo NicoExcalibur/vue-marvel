@@ -7,12 +7,16 @@
         v-for="(hero, index) in allHeroes"
         class="list-inline-item"
       >
-        <div class="card" style="width: 16rem;">
-          <h3>{{ hero.name }}</h3>
+        <div class="card">
           <img
             :src="hero.thumbnail.path + '.' + hero.thumbnail.extension"
             :alt="'Image de ' + hero.name"
           />
+          <h3>
+            <router-link :to="{ name: 'hero', params: { id: hero.name } }">{{
+              hero.name
+            }}</router-link>
+          </h3>
         </div>
       </li>
     </ul>
@@ -48,4 +52,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style>
+.characters {
+  margin: 1em 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>

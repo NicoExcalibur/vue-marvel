@@ -24,16 +24,14 @@ export default {
   margin: 0;
 }
 
+hi {
+  text-align: center;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 img {
