@@ -1,23 +1,20 @@
 <template>
   <div id="app">
     <Header></Header>
-    <img
-      alt="Marvel logo"
-      src="https://logos-marques.com/wp-content/uploads/2021/03/Logo-Marvel.png"
-    />
-    <Home msg="Bienvenue sur la page Marvel" />
+    <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Home from "./views/Home.vue";
 import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Home,
     Header,
+    Footer,
   },
 };
 </script>
@@ -25,6 +22,18 @@ export default {
 <style>
 * {
   margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 img {
