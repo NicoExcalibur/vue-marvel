@@ -2,11 +2,9 @@
   <div class="navbar">
     <div class="logo">LOGO</div>
     <div class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">Home</li>
-        <li class="nav-item"><a href="">Characters</a></li>
-        <li class="nav-item">Comics</li>
-      </ul>
+      <router-link to="/" class="nav-item">Home</router-link>
+      <router-link to="/characters" class="nav-item">Characters</router-link>
+      <router-link to="/comics" class="nav-item">Comics</router-link>
     </div>
   </div>
 </template>
